@@ -1,8 +1,13 @@
+/*
+ * Time: O(n)
+ * Space: O(1)
+ */
 class Solution {
     public boolean isPalindrome(String s) {
         if(s.isEmpty()) {
             return true;
         }
+        //use two pointers (at start and end), iterate each towards each other for each letter/number (ignoring special characters) until they meet or difference in char is found
         int startIdx = 0;
         int endIdx = s.length()-1;
         char head;
